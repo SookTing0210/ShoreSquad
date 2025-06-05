@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoreSquad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .font-poppins {
+      font-family: 'Poppins', 'ui-sans-serif', 'system-ui', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#f6fbff] min-h-screen flex flex-col font-poppins font-sans">
+  <!-- Top Navigation Bar -->
+  <nav class="bg-white shadow-md px-4 py-3 flex items-center justify-between sticky top-0 z-20">
+    <div class="font-bold text-xl text-blue-700 tracking-wide flex items-center gap-2">
+      <span class="text-2xl">🌊</span> ShoreSquad
+    </div>
+    <ul class="flex gap-6 text-base font-medium">
+      <li><a href="#" class="text-blue-700 font-bold">Home</a></li>
+      <li><a href="#" class="text-blue-700 hover:text-blue-900">Events</a></li>
+      <li><a href="#" class="text-blue-700 hover:text-blue-900">Map</a></li>
+      <li><a href="#" class="text-blue-700 hover:text-blue-900">My Crew</a></li>
+    </ul>
+  </nav>
+  <!-- Hero Banner -->
+  <header class="w-full bg-gradient-to-r from-sky-400 to-blue-700 py-10 px-4 text-center text-white shadow relative overflow-hidden">
+    <div class="max-w-4xl mx-auto relative z-10">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-2 flex items-center justify-center gap-2">🏝️ Pristine Beaches, Cleaner Future <span class="hidden md:inline">☀️</span></h2>
+      <p class="mb-4 text-lg">Join us in preserving Singapore's beautiful coastlines</p>
+      <h1 class="text-2xl md:text-3xl font-bold mt-4 mb-2 drop-shadow-lg">Rally Your Crew for Beach Cleanups!</h1>
+      <p class="text-base mb-6">Track weather, find locations, and make eco-action fun with your squad</p>
+      <div class="flex gap-3 justify-center md:justify-center mb-2">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded shadow transition flex items-center gap-2"><i class="fa-solid fa-users"></i> Join a Cleanup</button>
+        <button class="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded shadow transition flex items-center gap-2"><i class="fa-solid fa-plus"></i> Create Event</button>
+      </div>
+    </div>
+    <div class="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-yellow-100 to-transparent opacity-60 pointer-events-none"></div>
+    <div class="absolute left-0 bottom-0 w-1/4 h-24 bg-gradient-to-r from-blue-200 to-transparent opacity-40 pointer-events-none rounded-tr-full"></div>
+  </header>
+  <!-- Stats Cards -->
+  <section class="max-w-4xl mx-auto w-full px-4 mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div class="bg-white rounded-xl shadow flex flex-col items-center py-6 border-t-4 border-yellow-200">
+      <i class="fa-solid fa-trash fa-2x text-red-500 mb-2"></i>
+      <div class="text-2xl font-bold text-red-500">1135</div>
+      <div class="text-xs text-gray-400 mt-1">Kilograms Collected</div>
+    </div>
+    <div class="bg-white rounded-xl shadow flex flex-col items-center py-6 border-t-4 border-yellow-200">
+      <i class="fa-solid fa-location-dot fa-2x text-red-500 mb-2"></i>
+      <div class="text-2xl font-bold text-red-500">45</div>
+      <div class="text-xs text-gray-400 mt-1">Beaches Cleaned</div>
+    </div>
+    <div class="bg-white rounded-xl shadow flex flex-col items-center py-6 border-t-4 border-yellow-200">
+      <i class="fa-solid fa-users fa-2x text-red-500 mb-2"></i>
+      <div class="text-2xl font-bold text-red-500">350</div>
+      <div class="text-xs text-gray-400 mt-1">Squad Members</div>
+    </div>
+  </section>
+  <!-- Upcoming Cleanups -->
+  <section class="max-w-5xl mx-auto w-full px-4 mt-12 mb-12">
+    <h2 class="text-2xl font-bold text-[#2196f3] mb-6 flex items-center gap-2 justify-center tracking-tight">Upcoming Cleanups <span>🧹</span></h2>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Event Card 1 -->
+      <div class="bg-white rounded-2xl shadow p-6 flex flex-col border-t-4 border-[#2196f3]">
+        <div class="flex items-center gap-2 mb-2">
+          <div class="bg-[#e3f2fd] text-[#2196f3] font-bold rounded px-2 py-1 text-sm">Jun 8</div>
+          <span class="font-semibold text-base">Pasir Ris Beach Cleanup</span>
+          <span class="ml-auto bg-[#ff6f61] text-white text-xs px-2 py-0.5 rounded">NEXT</span>
+        </div>
+        <div class="flex items-center text-gray-500 text-sm mb-1"><i class="fa-solid fa-location-dot mr-1"></i> Pasir Ris Beach, Singapore</div>
+        <div class="flex items-center text-gray-500 text-sm mb-2"><i class="fa-solid fa-clock mr-1"></i> 09:00 AM</div>
+        <div class="flex items-center mb-2">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-7 h-7 rounded-full border-2 border-white -ml-1" alt="avatar">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-7 h-7 rounded-full border-2 border-white -ml-2" alt="avatar">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" class="w-7 h-7 rounded-full border-2 border-white -ml-2" alt="avatar">
+          <span class="ml-2 text-sm text-gray-600">12 squad members</span>
+        </div>
+        <button class="mt-auto bg-[#2196f3] hover:bg-[#1769aa] text-white font-semibold py-2 rounded-lg transition">Join Next Cleanup!</button>
+      </div>
+      <!-- Event Card 2 -->
+      <div class="bg-white rounded-2xl shadow p-6 flex flex-col border-t-4 border-[#2196f3]">
+        <div class="flex items-center gap-2 mb-2">
+          <div class="bg-[#e3f2fd] text-[#2196f3] font-bold rounded px-2 py-1 text-sm">Jun 15</div>
+          <span class="font-semibold text-base">East Coast Park Squad Action</span>
+          <span class="ml-auto text-[#2196f3] text-xs px-2 py-0.5 rounded border border-[#2196f3]">•</span>
+        </div>
+        <div class="flex items-center text-gray-500 text-sm mb-1"><i class="fa-solid fa-location-dot mr-1"></i> East Coast Park, Singapore</div>
+        <div class="flex items-center text-gray-500 text-sm mb-2"><i class="fa-solid fa-clock mr-1"></i> 08:30 AM</div>
+        <div class="flex items-center mb-2">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" class="w-7 h-7 rounded-full border-2 border-white -ml-1" alt="avatar">
+          <img src="https://randomuser.me/api/portraits/men/23.jpg" class="w-7 h-7 rounded-full border-2 border-white -ml-2" alt="avatar">
+          <img src="https://randomuser.me/api/portraits/women/12.jpg" class="w-7 h-7 rounded-full border-2 border-white -ml-2" alt="avatar">
+          <span class="ml-2 text-sm text-gray-600">8 squad members</span>
+        </div>
+        <button class="mt-auto bg-[#2196f3] hover:bg-[#1769aa] text-white font-semibold py-2 rounded-lg transition">Join Squad</button>
+      </div>
+      <!-- Event Card 3 -->
+      <div class="bg-white rounded-2xl shadow p-6 flex flex-col border-t-4 border-[#2196f3]">
+        <div class="flex items-center gap-2 mb-2">
+          <div class="bg-[#e3f2fd] text-[#2196f3] font-bold rounded px-2 py-1 text-sm">Jun 22</div>
+          <span class="font-semibold text-base">Sentosa Beach Conservation</span>
+          <span class="ml-auto text-[#2196f3] text-xs px-2 py-0.5 rounded border border-[#2196f3]">•</span>
+        </div>
+        <div class="flex items-center text-gray-500 text-sm mb-1"><i class="fa-solid fa-location-dot mr-1"></i> Sentosa Beach, Singapore</div>
+        <div class="flex items-center text-gray-500 text-sm mb-2"><i class="fa-solid fa-clock mr-1"></i> 10:00 AM</div>
+        <div class="flex items-center mb-2">
+          <img src="https://randomuser.me/api/portraits/men/77.jpg" class="w-7 h-7 rounded-full border-2 border-white -ml-1" alt="avatar">
+          <img src="https://randomuser.me/api/portraits/women/33.jpg" class="w-7 h-7 rounded-full border-2 border-white -ml-2" alt="avatar">
+          <img src="https://randomuser.me/api/portraits/men/12.jpg" class="w-7 h-7 rounded-full border-2 border-white -ml-2" alt="avatar">
+          <span class="ml-2 text-sm text-gray-600">15 squad members</span>
+        </div>
+        <button class="mt-auto bg-[#2196f3] hover:bg-[#1769aa] text-white font-semibold py-2 rounded-lg transition">Join Squad</button>
+      </div>
+    </div>
+  </section>
+  <!-- Map Section -->
+  <section class="max-w-6xl mx-auto w-full px-4 mb-12">
+    <h2 class="text-xl font-bold text-[#2196f3] mb-4 flex items-center gap-2 justify-center">Find Your Beach <span>🏝️</span></h2>
+    <div class="bg-white rounded-2xl shadow p-2 flex flex-col">
+      <iframe
+        title="Cleanup Map"
+        width="100%"
+        height="350"
+        frameborder="0"
+        style="border:0; border-radius:18px;"
+        src="https://www.google.com/maps?q=1.381497,103.955574&hl=en&z=13&output=embed"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+  <!-- Weather & Forecast Section -->
+  <section class="max-w-6xl mx-auto w-full px-2 mb-8 flex flex-col lg:flex-row gap-6">
+    <!-- Today's Weather Card -->
+    <div class="flex-1 bg-white rounded-xl shadow p-6 flex flex-col min-w-[320px]">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-base font-bold text-[#2196f3]">Today's Weather</h2>
+        <span class="text-2xl text-[#2196f3]"><i class="fa-solid fa-cloud-showers-heavy"></i></span>
+      </div>
+      <div class="text-gray-500 text-sm mb-2">Thundery Showers</div>
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-3xl font-bold text-[#2196f3]">30°C</span>
+      </div>
+      <div class="flex items-center text-red-500 text-sm font-semibold mb-2"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Consider rescheduling - rain expected</div>
+      <div class="grid grid-cols-2 gap-2 mt-2">
+        <div class="bg-blue-50 rounded px-2 py-1 flex items-center gap-2 text-xs"><i class="fa-solid fa-temperature-half text-blue-400"></i> High/Low <span class="ml-auto font-semibold">34°/29°C</span></div>
+        <div class="bg-blue-50 rounded px-2 py-1 flex items-center gap-2 text-xs"><i class="fa-solid fa-droplet text-blue-400"></i> Humidity <span class="ml-auto font-semibold">56-92%</span></div>
+        <div class="bg-blue-50 rounded px-2 py-1 flex items-center gap-2 text-xs"><i class="fa-solid fa-wind text-blue-400"></i> Wind <span class="ml-auto font-semibold">SSW</span></div>
+        <div class="bg-blue-50 rounded px-2 py-1 flex items-center gap-2 text-xs"><i class="fa-solid fa-clock text-blue-400"></i> Updated <span class="ml-auto font-semibold">09:09 am</span></div>
+      </div>
+    </div>
+    <!-- 4-Day Forecast Card -->
+    <div class="flex-[2] bg-white rounded-xl shadow p-6 flex flex-col min-w-[320px]">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-base font-bold text-[#ffb300] flex items-center gap-2"><i class="fa-solid fa-sun text-[#ffb300]"></i> 4-Day Forecast</h2>
+      </div>
+      <div class="flex flex-row gap-2 overflow-x-auto">
+        <!-- Day 1 -->
+        <div class="bg-blue-50 rounded-lg px-4 py-3 flex flex-col items-center min-w-[120px]">
+          <div class="text-xs text-gray-400 mb-1">Tomorrow</div>
+          <div class="text-2xl font-bold text-[#2196f3]">33°</div>
+          <div class="text-xs text-gray-500 mb-1">Morning thundery showers</div>
+          <div class="text-xs text-gray-400">56-92% Humidity</div>
+        </div>
+        <!-- Day 2 -->
+        <div class="bg-blue-50 rounded-lg px-4 py-3 flex flex-col items-center min-w-[120px]">
+          <div class="text-xs text-gray-400 mb-1">Sat, 7 Jun</div>
+          <div class="text-2xl font-bold text-[#2196f3]">33°</div>
+          <div class="text-xs text-gray-500 mb-1">Pre-dawn and early morning thundery showers</div>
+          <div class="text-xs text-gray-400">56-92% Humidity</div>
+        </div>
+        <!-- Day 3 -->
+        <div class="bg-blue-50 rounded-lg px-4 py-3 flex flex-col items-center min-w-[120px]">
+          <div class="text-xs text-gray-400 mb-1">Sun, 8 Jun</div>
+          <div class="text-2xl font-bold text-[#2196f3]"><i class="fa-solid fa-cloud-showers-heavy text-[#2196f3]"></i> 33°</div>
+          <div class="text-xs text-gray-500 mb-1">Pre-dawn and early morning thundery showers</div>
+          <div class="text-xs text-gray-400">56-92% Humidity</div>
+        </div>
+        <!-- Day 4 -->
+        <div class="bg-blue-50 rounded-lg px-4 py-3 flex flex-col items-center min-w-[120px]">
+          <div class="text-xs text-gray-400 mb-1">Mon, 9 Jun</div>
+          <div class="text-2xl font-bold text-[#2196f3]">33°</div>
+          <div class="text-xs text-gray-500 mb-1">Pre-dawn and early morning thundery showers</div>
+          <div class="text-xs text-gray-400">56-92% Humidity</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Your Squad Section -->
+  <section class="max-w-6xl mx-auto w-full px-2 mb-24 flex flex-col items-center">
+    <div class="flex flex-col items-center mb-6">
+      <span class="text-2xl text-[#2196f3] mb-1"><i class="fa-solid fa-people-group"></i></span>
+      <h2 class="text-xl font-bold text-[#2196f3] mb-1">Your Squad</h2>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4 mb-6 w-full max-w-3xl">
+      <!-- Squad Member Card -->
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center min-w-[140px]">
+        <div class="bg-[#2196f3] text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mb-2">AC</div>
+        <div class="font-semibold text-sm">Alex Chen</div>
+        <div class="text-xs text-gray-400 mb-1">Squad Leader</div>
+        <div class="flex items-center gap-1 text-xs text-gray-500"><i class="fa-solid fa-broom"></i> 24 cleanups</div>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center min-w-[140px]">
+        <div class="bg-[#2196f3] text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mb-2">MR</div>
+        <div class="font-semibold text-sm">Maya Rodriguez</div>
+        <div class="text-xs text-gray-400 mb-1">Ocean Guardian</div>
+        <div class="flex items-center gap-1 text-xs text-gray-500"><i class="fa-solid fa-broom"></i> 19 cleanups</div>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center min-w-[140px]">
+        <div class="bg-[#2196f3] text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mb-2">JK</div>
+        <div class="font-semibold text-sm">Jordan Kim</div>
+        <div class="text-xs text-gray-400 mb-1">Beach Watcher</div>
+        <div class="flex items-center gap-1 text-xs text-gray-500"><i class="fa-solid fa-broom"></i> 16 cleanups</div>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center min-w-[140px]">
+        <div class="bg-[#2196f3] text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mb-2">ST</div>
+        <div class="font-semibold text-sm">Sam Taylor</div>
+        <div class="text-xs text-gray-400 mb-1">ECO Enthusiast</div>
+        <div class="flex items-center gap-1 text-xs text-gray-500"><i class="fa-solid fa-broom"></i> 12 cleanups</div>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center min-w-[140px]">
+        <div class="bg-[#2196f3] text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mb-2">RP</div>
+        <div class="font-semibold text-sm">Riley Park</div>
+        <div class="text-xs text-gray-400 mb-1">Shore Protector</div>
+        <div class="flex items-center gap-1 text-xs text-gray-500"><i class="fa-solid fa-broom"></i> 8 cleanups</div>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center min-w-[140px]">
+        <div class="bg-[#2196f3] text-white rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mb-2">CM</div>
+        <div class="font-semibold text-sm">Casey Morgan</div>
+        <div class="text-xs text-gray-400 mb-1">Waste Defender</div>
+        <div class="flex items-center gap-1 text-xs text-gray-500"><i class="fa-solid fa-broom"></i> 7 cleanups</div>
+      </div>
+    </div>
+    <button class="bg-[#2196f3] hover:bg-blue-700 text-white font-semibold px-8 py-2 rounded shadow transition flex items-center gap-2"><i class="fa-solid fa-user-plus"></i> Invite Friends to Your Squad</button>
+  </section>
+  <!-- Bottom Navigation Bar -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-white shadow-t flex justify-around items-center py-2 border-t border-blue-100 z-20">
+    <a href="#" class="flex flex-col items-center text-[#2196f3]"><i class="fa-solid fa-house fa-lg mb-1"></i><span class="text-xs font-semibold">Home</span></a>
+    <a href="#" class="flex flex-col items-center text-gray-400"><i class="fa-solid fa-calendar-days fa-lg mb-1"></i><span class="text-xs">Events</span></a>
+    <a href="#" class="flex flex-col items-center text-gray-400"><i class="fa-solid fa-map-location-dot fa-lg mb-1"></i><span class="text-xs">Map</span></a>
+    <a href="#" class="flex flex-col items-center text-gray-400"><i class="fa-solid fa-users fa-lg mb-1"></i><span class="text-xs">My Crew</span></a>
+  </nav>
+</body>
+</html>
